@@ -1,0 +1,496 @@
+*{
+  --playstate: "paused";
+}
+
+.aua {
+  opacity: 100%;
+  color: white;
+  animation-fill-mode: forwards;
+  font-size: 15vw;
+  position: fixed;
+  left: 30%;
+  display: inline-block;
+  font-family: 'Montserrat';
+  font-weight: 800;
+}
+
+.intro-parent {
+  height: 100%;
+  width: 100%;
+  background: rgb(109, 220, 242);
+  z-index: 2147483647;
+  position: fixed;
+  top: 0px;
+  animation: parent 3.5s linear 0s 1;
+  animation-fill-mode: forwards;
+  animation-play-state: var(--playstate);;
+}
+
+@keyframes parent {
+  0% {
+    display: block;
+  }
+
+  85.71% {
+    opacity: 100%;
+    display: block;
+  }
+
+  99% {
+    opacity: 0%;
+  }
+
+  100% {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+
+@font-face {
+  font-family: cal;
+  src: url("Pacifico.ttf");
+}
+
+@font-face {
+  font-family: cal-2;
+  src: url("LobsterTwo-Regular.ttf");
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url('Montserrat/Montserrat-Light.ttf');
+}
+
+.centered {
+  top: 40%;
+  left: 30%;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: black;
+}
+
+div {
+  margin-top: 0px;
+}
+
+hr {
+  margin: 0px;
+}
+
+.h {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  padding: 10px;
+  margin: 3px;
+  transition: 0.8s;
+  font-family: 'Montserrat', montserrat;
+  display: inline-block;
+}
+
+.h:hover {
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  transition: 0.8s;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  background-image: linear-gradient(to right, blue, skyblue);
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+#under-intro {
+  z-index: 1000;
+}
+
+.prasinada {
+  float: left;
+}
+
+@media screen and (min-width: 600px) {
+  .prasinada {
+    display: none;
+  }
+}
+
+.b {
+  font-size: 2vw;
+  color: white;
+  font-weight: 500;
+  float: left;
+  transition: 0.5s;
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  border-radius: 20px;
+  background: rgb(217, 150, 56);
+  padding: 10px;
+}
+
+.b:hover {
+  text-decoration: none;
+  color: rgb(72, 176, 79);
+  bottom: 2vw;
+  transition: 0.5s;
+}
+
+.icon-bar {
+  background: white;
+  z-index: 2;
+}
+
+button {
+  margin: 5px;
+}
+
+#main {
+  background-image: url("images/1.jpg");
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  color: rgb(255, 255, 255);
+  height: 800px;
+  margin-top: 0px;
+}
+
+#main h1 {
+  font-size: 10vw;
+  font-family: cal-2;
+  font-weight: 700;
+  letter-spacing: 1vw;
+  color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: rgb(200, 200, 200);
+  opacity: 0.8;
+}
+
+#main h4 {
+  font-size: 2vw;
+  font-family: cal;
+  letter-spacing: 4px;
+  color: rgb(84, 184, 79);
+}
+
+#main2 {
+  background-image: url("images/6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  color: rgb(255, 255, 255);
+  height: 800px;
+  margin-top: 0px;
+}
+
+#main2 h1 {
+  font-size: 10vw;
+  font-family: cal-2;
+  font-weight: 700;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#main3 {
+  background-image: url("images/7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  color: rgb(255, 255, 255);
+  height: 800px;
+  margin-top: 0px;
+}
+
+#main3 h1 {
+  font-size: 10vw;
+  font-family: cal-2;
+  font-weight: 700;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#section0 table {
+  border-spacing: 40px 0px;
+  border-collapse: separate;
+  font-family: cal-2;
+  background-color: black;
+  color: white;
+  margin-top: 0px;
+}
+
+#section0 {
+  margin-top: 0px;
+  background-color: black;
+}
+
+#section0 td {
+  font-size: 25px;
+  text-align: justify;
+}
+
+#section0 h1 {
+  font-size: 40px;
+  font-family: cal;
+  text-align: left;
+  letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+#section0 img {
+  width: 100%;
+  vertical-align: top;
+  border: 2px;
+  border-color: red;
+  padding: 5px;
+}
+
+#section1 table {
+  border-spacing: 40px 0px;
+  border-collapse: separate;
+  font-family: cal-2;
+  background-color: black;
+  color: white;
+  margin-top: 0px;
+}
+
+#section1 {
+  margin-top: 0px;
+  background-color: black;
+}
+
+#section1 td {
+  font-size: 25px;
+  text-align: justify;
+}
+
+#section1 h1 {
+  font-size: 50px;
+  font-family: cal;
+}
+
+#section1 img {
+  width: 100%;
+  vertical-align: top;
+  border: 2px;
+  border-color: red;
+  padding: 5px;
+}
+
+
+#section2 h1 {
+  font-size: 50px;
+  margin-left: 40px;
+  font-family: cal;
+}
+
+#section2 table {
+  border-spacing: 40px 0px;
+  border-collapse: separate;
+  font-family: cal-2;
+}
+
+#section2 td {
+  font-size: 25px;
+  text-align: justify;
+}
+
+#section2 h1 {
+  font-size: 40px;
+  margin-left: 0px;
+  font-family: cal;
+  text-align: left;
+  word-spacing: 2px;
+}
+
+#section2 img {
+  width: 100%;
+  vertical-align: top;
+  border: 2px;
+  border-color: red;
+  padding: 5px;
+}
+
+#section3 {
+  background-color: white;
+}
+
+#section3 h1 {
+  font-size: 50px;
+  margin-left: 40px;
+  font-family: cal;
+}
+
+#section3 table {
+  border-spacing: 40px 0px;
+  border-collapse: separate;
+  font-family: cal-2;
+  color: black;
+  background-color: white;
+}
+
+#section3 td {
+  font-size: 25px;
+  text-align: justify;
+}
+
+#section3 h1 {
+  font-size: 40px;
+  margin-left: 0px;
+  font-family: cal;
+  text-align: left;
+  word-spacing: 2px;
+}
+
+#section3 img {
+  width: 100%;
+  vertical-align: top;
+  border: 2px;
+  border-color: red;
+  padding: 5px;
+}
+
+#section4 {
+  background-color: black;
+  color: white;
+}
+
+#section4 h1 {
+  font-size: 50px;
+  margin-left: 40px;
+  font-family: cal;
+}
+
+#section4 table {
+  border-spacing: 40px 0px;
+  border-collapse: separate;
+  font-family: cal-2;
+}
+
+#section4 td {
+  font-size: 25px;
+  text-align: justify;
+}
+
+#section4 h1 {
+  font-size: 40px;
+  margin-left: 0px;
+  font-family: cal;
+  text-align: left;
+  word-spacing: 2px;
+}
+
+#section4 img {
+  width: 100%;
+  vertical-align: top;
+  border: 2px;
+  border-color: red;
+  padding: 5px;
+}
+
+#section7 {
+  background-color: white;
+}
+
+#section7 h1 {
+  font-size: 50px;
+  margin-left: 40px;
+  font-family: cal;
+}
+
+#section7 table {
+  border-spacing: 40px 0px;
+  border-collapse: separate;
+  font-family: cal-2;
+  color: black;
+  background-color: white;
+}
+
+#section7 td {
+  font-size: 25px;
+  text-align: justify;
+}
+
+#section7 h1 {
+  font-size: 40px;
+  margin-left: 0px;
+  font-family: cal;
+  text-align: left;
+  word-spacing: 2px;
+}
+
+#section7 img {
+  width: 100%;
+  vertical-align: top;
+  border: 2px;
+  border-color: red;
+  padding: 5px;
+}
+
+#end {
+  background-color: black;
+  color: white;
+}
+
+#end h1 {
+  font-size: 50px;
+  margin-left: 40px;
+  font-family: cal;
+}
+
+#end table {
+  border-spacing: 40px 0px;
+  border-collapse: separate;
+  font-family: cal-2;
+}
+
+#end td {
+  font-size: 25px;
+  text-align: center;
+}
+
+#end h1 {
+  font-size: 40px;
+  margin-left: 0px;
+  font-family: cal;
+  text-align: left;
+  word-spacing: 2px;
+}
+
+#end img {
+  width: 70%;
+  height: 40%;
+  vertical-align: top;
+  border: 2px;
+  border-color: red;
+  padding: 5px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#end p {
+  text-align: justify;
+}
+
+.montserrat {
+  font-family: montserrat;
+}
+
