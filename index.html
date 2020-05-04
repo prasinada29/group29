@@ -17,7 +17,7 @@
         <title>TEAM AUA - PRASINADA</title>
         <script>
           var i = 0;
-          var text = 'AUA';
+          var text = 'AUA‎‎';
           var speed = 500;
 
           function aua() {
@@ -25,6 +25,10 @@
              document.getElementById("aua").innerHTML += text.charAt(i);
               i++;
               setTimeout(aua, speed);
+
+              if (i = 5) {
+                getElementById("intro-parent").setAttribute("style","opacity:0; -moz-opacity:0; filter:alpha(opacity=0)");
+              }
             }
           }
 
@@ -303,7 +307,7 @@
 
     <!-- the intro -->
     <div onload="aua()">
-    <div class="intro-parent" onload="bluebg()">
+    <div class="intro-parent" id="intro-parent" onload="bluebg()">
       <div class="aua centered" id="aua">_</div>
     </div>
     </div>
