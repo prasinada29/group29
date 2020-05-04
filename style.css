@@ -23,7 +23,7 @@
   top: 0px;
   animation: parent 3.5s linear 0s 1;
   animation-fill-mode: forwards;
-  animation-play-state: var(--playstate);;
+  animation-play-state: var(--playstate);
 }
 
 @keyframes parent {
@@ -483,7 +483,6 @@ button {
   border-color: red;
   padding: 5px;
   border-radius: 50%;
-  display: inline-block;
 }
 
 #end p {
