@@ -8,9 +8,9 @@
   animation-fill-mode: forwards;
   font-size: 15vw;
   position: fixed;
-  left: 30%;
+  left: 10%;
   display: inline-block;
-  font-family: 'Montserrat';
+  font-family: cal-2;
   font-weight: 800;
 }
 
@@ -21,7 +21,30 @@
   z-index: 2147483647;
   position: fixed;
   top: 0px;
-  
+  animation: parent 3.5s linear 0s 1;
+  animation-fill-mode: forwards;
+  animation-play-state: var(--playstate);;
+}
+
+@keyframes parent {
+  0% {
+    display: block;
+  }
+
+  85.71% {
+    opacity: 100%;
+    display: block;
+  }
+
+  99% {
+    opacity: 0%;
+  }
+
+  100% {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
+  }
 }
 
 @font-face {
@@ -41,7 +64,7 @@
 
 .centered {
   top: 40%;
-  left: 30%;
+  left: 10%;
 }
 
 html {
@@ -99,8 +122,9 @@ nav {
   float: left;
 }
 
-@media screen and (min-width: 600px) {
-  .prasinada {
+
+@media screen and (min-width: 768px) {
+  .prasinada{
     display: none;
   }
 }
@@ -453,9 +477,9 @@ button {
 }
 
 #end img {
-  width: 70%;
-  height: 40%;
-  vertical-align: top;
+  width: 40%;
+  height: 60%;
+  vertica-align: top;
   border: 2px;
   border-color: red;
   padding: 5px;
@@ -469,3 +493,4 @@ button {
 .montserrat {
   font-family: montserrat;
 }
+
