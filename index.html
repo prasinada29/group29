@@ -8,56 +8,61 @@
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-	<meta charset="utf-8">
+        <title>Team AUA - PRASINADA</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <title>PRASINADA</title>
-        <script>
-          var i = 0;
-          var text = 'GROUP-29';
-          var speed = 300;
-
-          function aua() {
-            if (i < text.length) {
-             document.getElementById("aua").innerHTML += text.charAt(i);
-              i++;
-              setTimeout(aua, speed);
-            }
-          }
-
-          function bluebg() {
-	          document.style.setProperty("--playstate", "running");
-          }
-          
-        </script>
+        <title>TEAM AUA - PRASINADA</title>
       </head>
 
-  <body onload="aua();">
+  <body>
 
     <a class="b" href="https://participativelearning.org/course/view.php?id=17" target="_blank">GRUEN</a>
 
     <nav class="navbar navbar-fixed-top navbar-expand-lg" id="under-intro">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="h prasinada">PRASINADA</a>
-          <button type="button" class="navbar-toggle navbar-right top" data-toggle="collapse" data-target="#myNavbar">
+          <a href="#" class="h hide">PRASINADA</a>
+          <button type="button" class="navbar-toggle navbar-right top inline">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="h navbar-brand">PRASINADA</a></li>
+          </ul>
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="#section1" class="h">Welcome</a></li>
-            <li><a href="#section2" class="h">About the City</a></li>
-            <li><a href="#section0" class="h">Capital</a></li>
-            <li><a href="#section3" class="h">Education</a></li>
-            <li><a href="#section4" class="h">Energy Generation</a></li>
-            <li><a href="#section5" class="h">Waste Management</a></li>
-            <li><a href="#section6" class="h">Maintainence of Greenery</a></li>
-            <li><a href="#section7" class="h">Transportation</a></li>
+            <li>
+              <div class="dropdown-internal">
+              <a href="#internal-working" class="h">Internal Working<span class="caret"></span></a>
+              <div class="internal-working">
+                <a href="#">Education</a>
+                <a href="#">Community Behaviour Changes</a>
+                <a href="#">Governance</a>
+                <a href="#">Maintenance of Greenery</a>
+                <a href="#">Low Air Pollution Levels</a>
+                <a href="#">Compensatory Act for Forests</a>
+              </div>
+            </div>
+            </li>
+            <li>
+              <div class="dropdown-external">
+              <a href="#external-working" class="h">External Working<span class="caret"></span></a>
+              <div class="external-working">
+                <a href="#">Water System</a>
+                <a href="#">Transportation</a>
+                <a href="#">Reducing the Temperature of the City</a>
+                <a href="#">Energy Generation</a>
+                <a href="#">Waste management</a>
+                <a href="#">Cleaner Methods of Operating Industries</a>
+              </div>
+            </div>
+            </li>
+            <li><a href="#" class="h">Video Presentation</a></li>
           </ul>
         </div>
       </div>
@@ -92,7 +97,7 @@
 
               <p>The city is built in such a way that it is directly connected to the main highway of the country while connecting to other neighboring cities through other domestic roads.</p>
 
-              <p>A city can not be made green until the neighboring cities are green too, therefore Prasinada helps other cities too to attain zero-carbon emission so that everyone can enjoy nature’s beauty while living in the most luxurious way possible.</p>
+              <p>A city can not be made green until the neighboring cities are green too, therefore The Green Heaven helps other cities too to attain zero-carbon emission so that everyone can enjoy nature’s beauty while living in the most luxurious way possible.</p>
 
               <p>To get to know more about how the city’s government works, the waste management system, maintenance of greenery, energy production and transportation, keep reading. If you want to learn only about a particular aspect of the city, feel free to use the navigation bar to navigate.</p>
             </div>
@@ -111,7 +116,7 @@
       <br><br><br><br>
       <p>
         <center>
-          <h1>INTERNAL WORKING OF THE CITY</h1>
+          <h1 id="internal-working">INTERNAL WORKING OF THE CITY</h1>
         </center>
       </p>
 
@@ -196,7 +201,7 @@
       <br><br><br><br>
       <p>
         <center>
-          <h1>EXTERNAL WORKING OF THE CITY</h1>
+          <h1 id="external-working">EXTERNAL WORKING OF THE CITY</h1>
         </center>
       </p>
 
@@ -208,7 +213,7 @@
           <td width="60%">
             <h1>ENERGY GENERATION</h1>
             <div class="montserrat">
-              <p>Prasinada has energy generation factories on the outskirts of the city. It serves as the powerhouse of the city as all the energy requirements of the city are fulfilled by this area alone. It is divided into various sectors that tackle different energy requirements of the city.</p>
+              <p>The Green Heaven has energy generation factories on the outskirts of the city. It serves as the powerhouse of the city as all the energy requirements of the city are fulfilled by this area alone. It is divided into various sectors that tackle different energy requirements of the city.</p>
 
               <p>The first sector is called the ‘Hydromotive Production Sector’. This is the area where most of the city’s hydrogen-based energy is produced. This industrial area has a large power plant in which the chemical energy of hydrogen is converted into mechanical energy by burning hydrogen in an internal combustion engine. The input energy for hydrogen-based energy is produced by a system of large windmills.</p>
 
@@ -225,9 +230,9 @@
 
                 <p>The raw materials used include dead plants (grown in a separate farm solely for this purpose), human and animal excrement, which are burned in an internal combustion reactor. The carbon dioxide produced from burning is sent into a large greenhouse where it is utilized by plants in the presence of sunlight to perform photosynthesis. The oxygen produced is used to produce water by reacting it with hydrogen gas and also in generating plastics.</p>
 
-                <p>Plastics have become an inevitable part of our lives. We cannot completely cut down plastic production. Thus, to tackle this problem Prasinada has adopted the technique of Cold Plasma Pyrolysis. This process breaks down the Bisphenol-A in plastic molecules and produces hydrocarbons such as methane along with the evolution of hydrogen gas. The term cold plasma refers to plasma that is produced at room temperature. This plasma can be easily contained in simple devices such as a test tube but we use big reactors to contain it.</p>
+                <p>Plastics have become an inevitable part of our lives. We cannot completely cut down plastic production. Thus, to tackle this problem The Green Heaven has adopted the technique of Cold Plasma Pyrolysis. This process breaks down the Bisphenol-A in plastic molecules and produces hydrocarbons such as methane along with the evolution of hydrogen gas. The term cold plasma refers to plasma that is produced at room temperature. This plasma can be easily contained in simple devices such as a test tube but we use big reactors to contain it.</p>
 
-                <p>The hydrogen-generating capacity of this process is about 50% (the 50% comprises methane and other hydrocarbons). Prasinada will be producing about 1 million tonnes of plastic annually out of which 75% is single used plastic. So if we plug in some numbers and do the math we find that we can generate 0.375 million liters of hydrogen gas annually. Which can be used in various fields along with electricity generation and powering hydrogen fuel based cars. </p>
+                <p>The hydrogen-generating capacity of this process is about 50% (the 50% comprises methane and other hydrocarbons). The Green Heaven will be producing about 1 million tonnes of plastic annually out of which 75% is single used plastic. So if we plug in some numbers and do the math we find that we can generate 0.375 million liters of hydrogen gas annually. Which can be used in various fields along with electricity generation and powering hydrogen fuel based cars. </p>
 
               </details>
             </div>
@@ -252,13 +257,13 @@
           <td width="60%">
             <h1>CITY'S TRANSPORTATION SYSTEM</h1>
             <div class="montserrat">
-              <p>Prasinada city is well connected to the outer world as well as maintains its own sacredism at the same time. This is due to the fact that Prasinada has a system of two circles namely the inner circle and the outer circle. Due to this, the city can be easily sealed if needed since unlike many cities, it has only seven entrances. This can especially be helpful during the time of an epidemic when communication with the rest of the world has to be terminated.</p>
+              <p>The Green Heaven city is well connected to the outer world as well as maintains its own sacredism at the same time. This is due to the fact that The Green Heaven has a system of two circles namely the inner circle and the outer circle. Due to this, the city can be easily sealed if needed since unlike many cities, it has only seven entrances. This can especially be helpful during the time of an epidemic when communication with the rest of the world has to be terminated.</p>
 
               <p>Many times ambulances, which may be carrying or receiving a critical patient, get stuck in traffic. So to ensure that everyone gets free and instant ambulance services, the city has been laid with binary electric lines. On these lines run the ‘Elevated Ambulance’.</p>
 
               <p>These ambulances rise about 50 feet above ground which is way higher than the mammoth double-decker buses that run on the streets of London. These ambulances can prove to be very crucial in life-death situations.</p>
 
-              <p>Prasinada promotes the use of hydrogen vehicles which ensures zero carbon emission. The fuel cell of the car generates electricity by converting the chemical energy obtained from the oxidation-reduction reaction of hydrogen with oxygen. Buses that run in the city are also dependent on hydrogen-based energy </p>
+              <p>The Green Heaven promotes the use of hydrogen vehicles which ensures zero carbon emission. The fuel cell of the car generates electricity by converting the chemical energy obtained from the oxidation-reduction reaction of hydrogen with oxygen. Buses that run in the city are also dependent on hydrogen-based energy </p>
 
               <p>The city is equipped with maglev trains that are very swift and efficient when it comes to short distances as well as long-distance travel.</p>
 
@@ -272,51 +277,51 @@
     </div>
     <div id="end">
       <br><br>
-      <h1>OUR TEAM ~~ TEAM AUA</h1><br>
+      <h1>&nbsp;&nbsp;OUR TEAM</h1><br>
       <table>
-        <tr>
-          <div class="montserrat">
-            <td>
-			  <h3>Abhyudit Singh</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-            <td>
-              <h3>Utkarsh Srivastav</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-            <td>
-              <h3>Arnav Khandelwal</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-            <td>
-              <h3>Ishit</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-            <td>
-              <h3>Navya</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-            <td>
-              <h3>Muskan</h3>
-              <img src="images/person1.jpg"><br><br><br>
-              <p> no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length.</p>
-            </td>
-          </div>
+        <tr width="100%">
+            <div class="montserrat">
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Abhyudit Singh
+              </td>
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Utkarsh Srivastav
+              </td>
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Arnav Khandelwal
+              </td>
+            </div>
+        </tr>
+        <tr>&nbsp;</tr>
+        <tr width="100%">
+            <div class="montserrat">
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Muskan Singroha
+              </td>
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Ishit Kumar
+              </td>
+              <td width="33%">
+                <img src="images/person1.jpg"><br>
+                Navya Verma
+              </td>
+            </div>
         </tr>
       </table>
     </div>
 
 
-    <!-- the intro -->
+    <!-- the intro 
     <div class="intro-parent" onload="bluebg()">
-      <div style="margin-top: 200px; margin-left: 0px;"><div class="aua" id="aua"></div></div>
-    </div>
+      <div class="aua centered" id="aua">_</div>
+    </div>-->
 
   </body>
 
 </html>
+
